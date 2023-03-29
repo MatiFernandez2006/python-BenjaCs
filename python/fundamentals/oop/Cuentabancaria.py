@@ -13,7 +13,7 @@ class CuentaBancaria:
         if(self.balance - amount) >= 0:
             self.balance -= amount
         else:
-            print("Fondos insuficientes: Charging a $5 fee")
+            print("Fondos insuficientes: Cobrando 5$")
             self.balance -= 5
         return self
     
