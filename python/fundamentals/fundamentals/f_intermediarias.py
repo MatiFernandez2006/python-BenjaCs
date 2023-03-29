@@ -1,5 +1,6 @@
 
 x = [ [5,2,3], [10,8,9] ] 
+
 estudiantes = [
     {'first_name':  'Michael', 'last_name' : 'Jordan'},
     {'first_name' : 'John', 'last_name' : 'Rosales'}
@@ -47,7 +48,6 @@ iterate_dictionary(estudiantes)
 
 def iterate_dictionary2(key_name,list):
     for i in range(0, len(list)):
-        
         for key,val in list[i].items():
             if key == key_name:
                 print(val)
