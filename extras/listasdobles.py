@@ -13,4 +13,4 @@ class DoublyLinkedList:
         new_node = Node(data)
         if self.head is None:
             self.head = new_node
-            self.tail = new_nod
+            self.tail = new_node
