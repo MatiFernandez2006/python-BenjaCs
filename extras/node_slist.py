@@ -2,7 +2,7 @@ class SLNode:
     def __init__(self, val):
         self.value = val
         self.next = None
-
+    
 class SList:
     def __init__(self):
         self.head = None
@@ -49,6 +49,7 @@ class SList:
         removed_value = runner.next.value
         runner.next = None
         return removed_value
+    
 
     def remove_val(self, val):
         if self.head is None:
@@ -83,7 +84,7 @@ class SList:
 
 
 my_list = SList()
-my_list.add_to_front(3).add_to_front(2).add_to_front(1)
+my_list.add_to_front(54).add_to_front(26).add_to_front(93).add_to_front(17).add_to_front(77).add_to_front(31)
 my_list.print_values() 
 
 removed_value = my_list.remove_from_front()
@@ -94,7 +95,7 @@ removed_value = my_list.remove_from_back()
 print(f"Removed value: {removed_value}") 
 my_list.print_values() 
 
-my_list.remove_val(2)
+my_list.remove_val(17)
 my_list.print_values() 
 
 my_list.add_to_front(3).add_to_front(2).add_to_front(1)
