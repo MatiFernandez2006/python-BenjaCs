@@ -19,7 +19,6 @@ class Email:
         query = "INSERT INTO emails (email) VALUES (%(email)s);"
         return connectToMySQL(cls.db).query_db(query,data)
     
-    # class method to get all the emails fromt the database
     @classmethod
     def get_all(cls):
         query= "SELECT * FROM emails;"
@@ -29,7 +28,6 @@ class Email:
             emails.append( cls(row) )
         return emails
 
-    # class method to delete an email from the database based on the PK.
     @classmethod
     def destroy(cls,data):
         query = "DELETE FROM emails WHERE id = %(id)s;"
